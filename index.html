@@ -10,12 +10,12 @@
 </head>
 <body>
 
-  <!-- HEADER / NAV -->
+
   <header>
     <nav class="navbar" role="navigation" aria-label="Navigation principale">
       <ul class="nav-links left-links">
-        <li><a href="#">ARTISTE</a></li>
-        <li><a href="#">EXPOSITION</a></li>
+        <li><a href="#about">ARTISTE</a></li>
+        <li><a href="#exposition">EXPOSITION</a></li>
       </ul>
 
       <div class="logo">
@@ -23,18 +23,18 @@
       </div>
 
       <ul class="nav-links right-links">
-        <li><a href="#">MAGASIN</a></li>
-        <li><a href="#">CONTACT</a></li>
+        <li><a href="#MAGASIN">MAGASIN</a></li>
+        <li><a href="#contact">CONTACT</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- HERO (bande image large) -->
+  
   <section class="hero" aria-label="Bannière">
     <img src="imagefond.png" alt="image d'arrière-plan">
   </section>
 
-  <!-- ABOUT -->
+ 
   <section class="about" id="about">
     <h2>À propos de Dechewsky</h2>
     <p>
@@ -45,7 +45,7 @@
     </p>
   </section>
 
-  <!-- EXPOSITION -->
+  
   <section class="exposition" id="exposition">
     <div class="top-bar">
       <h1>EXPOSITION</h1>
@@ -80,10 +80,8 @@
     </div>
   </section>
 
-  <!-- MAGASIN -->
-  <!-- Note: pour conserver tes sélecteurs d'origine (body.mag etc.), j'ajoute une wrapper .mag.
-       Le CSS gère à la fois .mag .top et body.mag pour compatibilité. -->
-  <section class="mag">
+  
+  <section class="mag" id="MAGASIN"> 
     <header class="top mag">
       <h1>MAGASIN</h1>
     </header>
@@ -108,8 +106,8 @@
     </section>
   </section>
 
-  <!-- FOOTER -->
-  <footer>
+  
+  <footer id="contact">
     <div class="footer-container">
       <div class="contact">
         <h3>NOUS CONTACTER</h3>
