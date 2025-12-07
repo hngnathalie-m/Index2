@@ -1,52 +1,15 @@
-body {
-  margin: 0;
-  font-family: "Playfair Display", serif;
-  background-color: #EFE2D6;
-  color: #000;
-  
-}
-
-/* ---------- NAVBAR ---------- */
-.navbar {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #EFE2D6;
-  padding: 22px 80px;
-  height: 120px;
-  gap: 80px;
-  position: relative;
-}
-
-.nav-links {
-  display: flex;
-  list-style: none;
-  gap: 48px;
-  margin: 0;
-  padding: 0;
-  font-size: 20px;
-  align-items: center;
-}
-
-.nav-links a {
-  text-decoration: none;
-  color: #000;
-  font-weight: 500;
-  letter-spacing: 1px;
-  font-family: "Playfair Display", serif;
-}
 
 /* logo sits visually above the nav line like in the maquette */
 .logo {
   position: relative;
-  margin-top: 156px;
+  margin-top: 110px;
   
 }
 
 .logo img {
-  height: 150px; /* adjusted to a good display for desktop */
+  height: 100px; /* adjusted to a good display for desktop */
   display: block;
-  height: 320px;
+  height: 300px;
 }
 
 /* ---------- HERO ---------- */
@@ -80,6 +43,8 @@ body {
 }
 
 /* ---------- EXPOSITION ---------- */
+
+
 .top-bar {
   background-color: white;
   padding: 14px 0;
@@ -95,56 +60,45 @@ body {
 }
 
 .image-row {
-  display: flex;
-  justify-content: center;
-  gap: 50px;
-  margin: 28px auto;
-  flex-wrap: wrap;
-  padding: 0 20px;
-  max-width: 1100px;
-}
-
-.image-block {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: calc(50% - 60px);
-  max-width: 420px;
-}
-
-.art-img {
-  width: 350px;
-  max-width: 100%;
-  height: auto;
-  border-radius: 2px;
-  display: block;
-}
-
-.caption {
-  font-family: 'Open Sans', sans-serif;
-  font-style: italic;
-  margin-top: 10px;
-  font-size: 15px;
-  color: #2f2a26;
-}
-
-/* centering for mobile single-column */
-.image-block:first-child { margin-top: 20px; }
-
-.voir-plus {
-  margin-top: 30px;
-  text-align: center;
-  padding-bottom: 20px;
-}
-
-.voir-plus a {
-  text-decoration: none;
-  color: black;
-  font-family: 'Playfair Display', serif;
-  font-size: 16px;
-  border-bottom: 1px solid black;
-  padding-bottom: 3px;
-}
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+    }
+    
+    .image-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+    
+    .art-img {
+    width: 350px;
+    height: auto;
+    border-radius: 2px;
+    }
+    
+    .caption {
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+    margin-top: 10px;
+    font-size: 15px;
+    }
+    
+    .voir-plus {
+    margin-top: 40px;
+    margin-left: 47%;
+    }
+    
+    .voir-plus a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    border-bottom: 1px solid black;
+    padding-bottom: 3px;
+    }
 
 /* ---------- MAGASIN ---------- */
 /* Keep original selectors but make them work inside .mag wrapper as well */
@@ -153,7 +107,7 @@ body.mag, .mag { background-color: #f2e8db; }
 .top.mag, .mag .top {
   background: white;
   padding: 20px;
-  text-align: center;
+  text-align: center ;
   border-bottom: 1px solid #e2d6c6;
   margin-top: 40px;
 }
@@ -173,7 +127,7 @@ body.mag, .mag { background-color: #f2e8db; }
 
 .upper.mag, .mag .upper {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly ;
   align-items: center;
   flex-wrap: wrap;
   gap: 30px;
@@ -193,11 +147,12 @@ body.mag, .mag { background-color: #f2e8db; }
 }
 
 .lower.mag, .mag .lower {
-  margin-top: 26px;
+  margin-top: 40px;
   display: flex;
   justify-content: space-between;
   gap: 20px;
   flex-wrap: wrap;
+  text-align: center;
 }
 
 .left.mag, .mag .left,
@@ -210,7 +165,7 @@ body.mag, .mag { background-color: #f2e8db; }
 
 .more.mag, .mag .more {
   text-align: center;
-  margin-top: 36px;
+  margin-top: 50px;
 }
 
 .more.mag a, .mag .more a {
